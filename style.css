@@ -1,63 +1,21 @@
-<style type="text/css">
-.state
-{
-
-	fill:blue;
-	stroke:#646464;
-	stroke-width:1;
-	opacity:0.8;
-}
-
-
-
-.state1 
-{
-	fill:red;
-	stroke:#646464;
-	stroke-width:1;
-	opacity:0.8;
-}
-
-.state3
-{
+#input1 {
+	font-size:  36;
+	background-color: red;
+	color: white;
+	height: 60px;
+	width: 60px;
+	text-align: center;
 	
-	fill: grey;
-	stroke:#646464;
-	stroke-width:2;
-	stroke-opacity:1;
+
+
 }
 
-.territory
-{
-	opacity:0;
-	fill:#E0E0E0;
-	stroke:#646464;
-	stroke-width:1;
-	stroke-opacity:1;
+#input2 {
+	font-size:  36;
+	background-color: red;
+	color: white;
+	height: 60px;
+	width: 130px;
+	text-align: center;
+	
 }
-
-.territoryborder
-{
-	opacity:0;
-	fill:none;
-	stroke:#A9A9A9;
-	stroke-width:2;
-}
-
-.border
-{
-	opacity:1;
-	fill:none;
-	stroke:#A9A9A9;
-	stroke-width:2;
-}
-
-<!-- .circle
-{
-   opacity:1;
-   fill:#E0E0E0;
-   stroke:#646464;
-   stroke-width:1;
-} -->
-
-</style>
