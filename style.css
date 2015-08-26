@@ -40,13 +40,6 @@ body{
 	display: inline-block;
 }
 
-#eachState {
-	height: 75%;
-	width: 75%;
-	float:	left;
-	display: inline-block;
-}
-
 #score1 {
 	font-size:  28;
 	background-color: red;
@@ -64,6 +57,225 @@ body{
 	width: 40px;
 	text-align: center;
 }
+
+#eachState{
+	float:	left;
+	display: inline-block;
+
+}
+
 div #al {
 	content:url(/Users/Les/Documents/GA/Project1/states/alabama.jpg);
+	visibility: visible;
 }
+div #ak {
+	content:url(/Users/Les/Documents/GA/Project1/states/alaska.jpg);
+	visibility: visible;
+}
+div #az {
+	content:url(/Users/Les/Documents/GA/Project1/states/arizona.jpg);
+	visibility: visible;
+}
+div #ar {
+	content:url(/Users/Les/Documents/GA/Project1/states/arkansas.jpg);
+	visibility: visible;
+} 
+div #ca {
+	content:url(/Users/Les/Documents/GA/Project1/states/california.jpg);
+	visibility: visible;
+} 
+div #co {
+	content:url(/Users/Les/Documents/GA/Project1/states/colorado.jpg);
+	visibility: visible;
+} 
+div #ct {
+	content:url(/Users/Les/Documents/GA/Project1/states/connecticut.jpg);
+	visibility: visible;
+} 
+div #de {
+	content:url(/Users/Les/Documents/GA/Project1/states/delaware.jpg);
+	visibility: visible;
+} 
+div #fl {
+	content:url(/Users/Les/Documents/GA/Project1/states/florida.jpg);
+	visibility: visible;
+} 
+div #ga {
+	content:url(/Users/Les/Documents/GA/Project1/states/georgia.jpg);
+	visibility: visible;
+} 
+div #hi {
+	content:url(/Users/Les/Documents/GA/Project1/states/hawaii.jpg);
+	visibility: visible;
+}
+div #id {
+	content:url(/Users/Les/Documents/GA/Project1/states/idaho.jpg);
+	visibility: visible;
+} 
+div #il {
+	content:url(/Users/Les/Documents/GA/Project1/states/illinois.jpg);
+	visibility: visible;
+} 
+div #in {
+	content:url(/Users/Les/Documents/GA/Project1/states/indiana.jpg);
+	visibility: visible;
+} 
+div #ia {
+	content:url(/Users/Les/Documents/GA/Project1/states/iowa.jpg);
+	visibility: visible;
+}           
+div #ks {
+	content:url(/Users/Les/Documents/GA/Project1/states/kansas.jpg);
+	visibility: visible;
+} 
+div #ky {
+	content:url(/Users/Les/Documents/GA/Project1/states/kentucky.jpg);
+	visibility: visible;
+} 
+div #la {
+	content:url(/Users/Les/Documents/GA/Project1/states/louisiana.jpg);
+	visibility: visible;
+}        
+div #me {
+	content:url(/Users/Les/Documents/GA/Project1/states/maine.jpg);
+	visibility: visible;
+}
+div #md {
+	content:url(/Users/Les/Documents/GA/Project1/states/maryland.jpg);
+	visibility: visible;
+} 
+div #ma {
+	content:url(/Users/Les/Documents/GA/Project1/states/massachusetts.jpg);
+	visibility: visible;
+} 
+div #mi {
+	content:url(/Users/Les/Documents/GA/Project1/states/michigan.jpg);
+	visibility: visible;
+}     
+div #mn {
+	content:url(/Users/Les/Documents/GA/Project1/states/minnesota.jpg);
+	visibility: visible;
+} 
+div #ms {
+	content:url(/Users/Les/Documents/GA/Project1/states/mississippi.jpg);
+	visibility: visible;
+} 
+div #mo {
+	content:url(/Users/Les/Documents/GA/Project1/states/missouri.jpg);
+	visibility: visible;
+} 
+div #mt {
+	content:url(/Users/Les/Documents/GA/Project1/states/montana.jpg);
+	visibility: visible;
+} 
+div #ne {
+	content:url(/Users/Les/Documents/GA/Project1/states/nebraska.jpg);
+	visibility: visible;
+} 
+div #nv {
+	content:url(/Users/Les/Documents/GA/Project1/states/nevada.jpg);
+	visibility: visible;
+} 
+div #nh {
+	content:url(/Users/Les/Documents/GA/Project1/states/new_hampshire.jpg);
+	visibility: visible;
+} 
+div #nj {
+	content:url(/Users/Les/Documents/GA/Project1/states/new_jersey.jpg);
+	visibility: visible;
+} 
+div #nm {
+	content:url(/Users/Les/Documents/GA/Project1/states/new_mexico.jpg);
+	visibility: visible;
+} 
+div #ny {
+	content:url(/Users/Les/Documents/GA/Project1/states/new_york.jpg);
+	visibility: visible;
+} 
+div #nc {
+	content:url(/Users/Les/Documents/GA/Project1/states/north_carolina.jpg);
+	visibility: visible;
+}   
+div #nd {
+	content:url(/Users/Les/Documents/GA/Project1/states/north_dakota.jpg);
+	visibility: visible;
+} 
+div #oh {
+	content:url(/Users/Les/Documents/GA/Project1/states/ohio.jpg);
+	visibility: visible;
+} 
+div #ok {
+	content:url(/Users/Les/Documents/GA/Project1/states/oklahoma.jpg);
+	visibility: visible;
+} 
+div #or {
+	content:url(/Users/Les/Documents/GA/Project1/states/oregon.jpg);
+	visibility: visible;
+} 
+div #pa {
+	content:url(/Users/Les/Documents/GA/Project1/states/pennsylvania.jpg);
+	visibility: visible;
+} 
+div #ri {
+	content:url(/Users/Les/Documents/GA/Project1/states/rhode_island.jpg);
+	visibility: visible;
+} 
+div #sc {
+	content:url(/Users/Les/Documents/GA/Project1/states/south_carolina.jpg);
+	visibility: visible;
+}   
+div #sd {
+	content:url(/Users/Les/Documents/GA/Project1/states/south_dakota.jpg);
+	visibility: visible;
+} 
+div #tn {
+	content:url(/Users/Les/Documents/GA/Project1/states/tennessee.jpg);
+	visibility: visible;
+} 
+div #tx {
+	content:url(/Users/Les/Documents/GA/Project1/states/texas.jpg);
+	visibility: visible;
+} 
+div #ut {
+	content:url(/Users/Les/Documents/GA/Project1/states/utah.jpg);
+	visibility: visible;
+}
+div #vt {
+	content:url(/Users/Les/Documents/GA/Project1/states/vermont.jpg);
+	visibility: visible;
+}  
+div #va {
+	content:url(/Users/Les/Documents/GA/Project1/states/virginia.jpg);
+	visibility: visible;
+} 
+div #wa {
+	content:url(/Users/Les/Documents/GA/Project1/states/washington.jpg);
+	visibility: visible;
+} 
+div #wv {
+	content:url(/Users/Les/Documents/GA/Project1/states/west_virginia.jpg);
+	visibility: visible;
+} 
+div #wi {
+	content:url(/Users/Les/Documents/GA/Project1/states/wisconsin.jpg);
+	visibility: visible;
+} 
+div #wy {
+	content:url(/Users/Les/Documents/GA/Project1/states/wyoming.jpg);
+	visibility: visible;
+} 
+
+
+
+
+          
+
+    
+        
+         
+
+
+           
+
+
+
