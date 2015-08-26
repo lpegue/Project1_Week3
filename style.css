@@ -1,3 +1,10 @@
+body{
+    width:100%; 
+    width:100%; 
+    margin:0; 
+    padding:0;
+}
+
 #input1 {
 	font-size:  36;
 	background-color: red;
@@ -5,9 +12,6 @@
 	height: 60px;
 	width: 60px;
 	text-align: center;
-	
-
-
 }
 
 #input2 {
@@ -17,12 +21,49 @@
 	height: 60px;
 	width: 130px;
 	text-align: center;
-	
 }
-#button {
-	background-color: green;
-	color: white;
-	height: 30px;
-	width: 30px;
 
+#reset {
+	background-color: blue;
+	color: white;
+	height: 60px;
+	width: 190px;
+	font-size: 26;
+	text-transform: uppercase;
+}
+
+#map {
+	height: 75%;
+	width: 75%;
+	text-align: center;
+	float:	left;
+	display: inline-block;
+}
+
+#eachState {
+	height: 75%;
+	width: 75%;
+	float:	left;
+	display: inline-block;
+}
+
+#score1 {
+	font-size:  28;
+	background-color: red;
+	color: white;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+}
+
+#score2 {
+	font-size:  28;
+	background-color: blue;
+	color: white;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+}
+div #al {
+	content:url(/Users/Les/Documents/GA/Project1/states/alabama.jpg);
 }
