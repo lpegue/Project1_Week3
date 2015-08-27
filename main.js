@@ -3,52 +3,67 @@ var states = ["al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "hi", 
 "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"];
 
 var scoreCounter = 0
+var allStates = document.querySelectorAll(".state")
+var playerTurn = 1
 
 
-function compareInputToArray() {   // compare 2-letter state abbreviation to array
-	
+function compareInputToArray(){   // compare 2-letter state abbreviation to array
 
 	var testState = $("#input1").val().toLowerCase() ; // grab input from text field in the HTML and store it in variable testState. Will put in downcase and then compare.
 	var i = states.indexOf(testState); // look for a match between testState and our array of known states. indexOf returns the index position within the array if it finds a match. It returns -1 if no match 
 
-	if (i != -1) { // if match is found 
-		console.log("You guessed " + $("#input1").val() + " correctly!"); // logs user input
+	if (i != -1) { // if match is found
+		setImageVisible(testState, true); 
+		console.log("You guessed " + testState + " correctly!"); // logs user input
 		console.log("You guessed " + states[i] + " correctly!"); // logs the matched item in array
 		states.splice(i,1); // pulls matched item from the array
-		scoreCounter ++;
+		scoreCounter++;
 		console.log( scoreCounter + " guessed correctly " + states.length + " to go!"); //this does a count on remaining items in the array
 
 	}
 
+	$("#score1")[0].innerText=scoreCounter;
+	$("#input1").val("");
+
+}
+
+function setImageVisible(id, visible) {
+    var img = document.getElementById(id);
+    img.style.visibility = (visible ? 'visible' : 'hidden');
+}
+
+function reset(){
+	for (var i = 0; i < allStates.length; i++) {
+		allStates[i].style.visibility="hidden"
+}
+}
+
+ 
+function resetAll(){
+		for (var i = 0; i < allStates.length; i++) {
+			allStates[i].style.visibility="hidden";
+			$("#score1").val("");
+			$("#score2").val("");
+			console.log("we got here")
+}
+}
+
+function displayTurn(x){
+	if (x % 2 === 0) {
+		alert("You are Player 1")
+	}
+	else {
+		alert("You are Player 2")
+	}
+}
 
 
-	
 
 
-	
 
-};
-
-// steps
-// 1. make the score appear on the screen
-
-// if (scoreCounter++) {
-// 		"score1"=scoreCounter
-// 	}
 
 // 2. timer
 
-// 3. reset game
-// var reset = document.querySelector("reset");
-
-document.getElementById("reset").addEventListener("click", function () {
-		function reset (){
-			console.log(this) 
-			<img src=/states.map_empty.jpg/>
-		}
-	})
-};
-reset ()
 
 
 
@@ -66,15 +81,15 @@ reset ()
 
 // 6.  declare winner
 
-if ("score1".val > "score2".val) {
-	return("Player 1 Won!!!")
-}
-if ("score2".val > "score1".val) {
-	return("Player 2 Won!!!)
-}
-else {
-	return("Tie!!!")
-}
+// if ("score1".val > "score2".val) {
+// 	return("Player 1 Won!!!")
+// }
+// if ("score2".val > "score1".val) {
+// 	return("Player 2 Won!!!)
+// }
+// else {
+// 	return("Tie!!!")
+// }
 
 
 
