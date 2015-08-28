@@ -5,7 +5,7 @@
    
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="/Timer.js" /></script>
+
 </head>
 
 
@@ -70,26 +70,29 @@
     </div>
 
     <div class="gameStuff">
-        <p> Enter The 2-Letter State Abbreviation Below
+        <p> Enter The 2-Letter State Abbreviation And Enter </p>
+        <form id="enter">
         <input id="input1" type="text" name="abbrev" maxlength="2"></input>
-        <input id="input2" type="submit" value="Submit" onclick="compareInputToArray()"></input>
-        </p>    
+        <input id="input2" type="submit" value="Submit"></input> 
+        </form>  
 
         <p> Player 1's Score:  
         <div id="score1" name=player1Score>
-          
         </div>
         </p>
    
         <p> Player 2's Score: 
         <div id="score2" name=player2Score>
-         </div>
+        </div>
+
         </p>
+         <input type="submit" id="switchPlayer" value="SWITCH PLAYERS"></input>
 
-         <input type="submit" id="reset" onclick="reset()" value="RESET BOARD"></input>
+         <input type="submit" id="resetAll" value="RESET BOARD AND SCORES"></input>
 
-         <input type="submit" id="resetAll" onclick="reset()" value="RESET BOARD AND SCORE"></input>
-     </div>  
+         <input type="submit" id="start" value="START GAME you have 60 seconds!"></input>
+        </p>
+    </div>  
 
      <script type="text/javascript" src="main.js"></script> 
    

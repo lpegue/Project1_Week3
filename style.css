@@ -23,11 +23,11 @@ body{
 	text-align: center;
 }
 
-#reset {
+#switchPlayer {
 	background-color: blue;
 	color: white;
 	height: 60px;
-	width: 190px;
+	width: 240px;
 	font-size: 26;
 	text-transform: uppercase;
 }
@@ -36,9 +36,16 @@ body{
 	background-color: blue;
 	color: white;
 	height: 60px;
-	width: 300px;
+	width: 310px;
 	font-size: 22;
 	text-transform: uppercase;
+}
+#start {
+	background-color: blue;
+	color: white;
+	height: 60px;
+	width: 370px;
+	font-size: 22;
 }
 
 #map {
@@ -83,307 +90,317 @@ body{
 	position: absolute;
 }
 
+.gameStuff {
+	border:	2px;
+	color: black;
+	top: 800px;
+}
+
+
+
 div#al {
-	content:url(/Users/Les/Documents/GA/Project1/states/alabama.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/alabama.png);
 	visibility: hidden;
 	top: 313px;
 	left: 535px;
 }	
 div#ak {
-	content:url(/Users/Les/Documents/GA/Project1/states/alaska.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/alaska.png);
 	visibility: hidden;
 	top: 400px;
 	left: 0;
 }
 div#az {
-	content:url(/Users/Les/Documents/GA/Project1/states/arizona.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/arizona.png);
 	visibility: hidden;
 	top: 269px;
 	left: 112px;
 }
 div#ar {
-	content:url(/Users/Les/Documents/GA/Project1/states/arkansas.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/arkansas.png);
 	visibility: hidden;
 	top:295px;
 	left: 438px
 } 
 div#ca {
-	content:url(/Users/Les/Documents/GA/Project1/states/california.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/california.png);
 	visibility: hidden;
-	top: 141px;
+	top: 134px;
 	left: 0;
 } 
 div#co {
-	content:url(/Users/Les/Documents/GA/Project1/states/colorado.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/colorado.png);
 	visibility: hidden;
 	top: 196px;
 	left: 213px;
 } 
 div#ct {
-	content:url(/Users/Les/Documents/GA/Project1/states/connecticut.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/connecticut.png);
 	visibility: hidden;
 	top: 200px;
 	left: 740px;
 } 
 div#de {
-	content:url(/Users/Les/Documents/GA/Project1/states/delaware.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/delaware.png);
 	visibility: hidden;
 	top: 150px;
 	left: 780px;
 } 
 div#fl {
-	content:url(/Users/Les/Documents/GA/Project1/states/florida.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/florida.png);
 	visibility: hidden;
 	top: 389px;
 	left: 549px;
 } 
 div#ga {
-	content:url(/Users/Les/Documents/GA/Project1/states/georgia.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/georgia.png);
 	visibility: hidden;
 	top: 311px;
 	left: 580px;
 } 
 div#hi {
-	content:url(/Users/Les/Documents/GA/Project1/states/hawaii.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/hawaii.png);
 	visibility: hidden;
 	top: 400px;
 	left: 100;
 }
 div#id {
-	content:url(/Users/Les/Documents/GA/Project1/states/idaho.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/idaho.png);
 	visibility: hidden;
-	top: 12px;
-	left: 99px;
+	top: 9px;
+	left: 105px;
 } 
 div#il {
-	content:url(/Users/Les/Documents/GA/Project1/states/illinois.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/illinois.png);
 	visibility: hidden;
 	top: 169px;
 	left: 475px;
 } 
 div#in {
-	content:url(/Users/Les/Documents/GA/Project1/states/indiana.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/indiana.png);
 	visibility: hidden;
 	top: 170px;
 	left: 533px
 } 
 div#ia {
-	content:url(/Users/Les/Documents/GA/Project1/states/iowa.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/iowa.png);
 	visibility: hidden;
 	top: 152px;
 	left: 400px;
 }           
 div#ks {
-	content:url(/Users/Les/Documents/GA/Project1/states/kansas.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/kansas.png);
 	visibility: hidden;
 	top: 224px;
 	left: 319px;
 } 
 div#ky {
-	content:url(/Users/Les/Documents/GA/Project1/states/kentuky.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/kentucky.png);
 	visibility: hidden;
 	top:  224px;
 	left: 510px;
 } 
 div#la {
-	content:url(/Users/Les/Documents/GA/Project1/states/louisiana.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/louisiana.png);
 	visibility: hidden;
 	top: 363px;
 	left: 443px;
 }        
 div#me {
-	content:url(/Users/Les/Documents/GA/Project1/states/maine.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/maine.png);
 	visibility: hidden;
 	top: 0;
 	left: 742px;
 
 }
 div#md {
-	content:url(/Users/Les/Documents/GA/Project1/states/maryland.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/maryland.png);
 	visibility: hidden;
 	top: 350px;
 	left: 791px;
 } 
 div#ma {
-	content:url(/Users/Les/Documents/GA/Project1/states/massachusetts.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/massachusetts.png);
 	visibility: hidden;
 	top: 102px;
 	left: 728px;
 } 
 div#mi {
-	content:url(/Users/Les/Documents/GA/Project1/states/michigan.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/michigan.png);
 	visibility: hidden;
 	top: 63px;
 	left: 497px;
 }     
 div#mn {
-	content:url(/Users/Les/Documents/GA/Project1/states/minnesota.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/minnesota.png);
 	visibility: hidden;
 	top: 38px;
 	left: 389px;
 } 
 div#ms {
-	content:url(/Users/Les/Documents/GA/Project1/states/mississippi.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/mississippi.png);
 	visibility: hidden;
 	top: 319px;
 	left: 488px;
 } 
 div#mo {
-	content:url(/Users/Les/Documents/GA/Project1/states/missouri.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/missouri.png);
 	visibility: hidden;
 	top: 214px;
 	left: 416px;
 
 } 
 div#mt {
-	content:url(/Users/Les/Documents/GA/Project1/states/montana.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/montana.png);
 	visibility: hidden;
 	top: 15;
 	left: 150px;
 }
 
 div#ne {
-	content:url(/Users/Les/Documents/GA/Project1/states/nebraska.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/nebraska.png);
 	visibility: hidden;
 	top: 400px;
 	left: 600px
 } 
 
 div#nv {
-	content:url(/Users/Les/Documents/GA/Project1/states/nevada.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/nevada.png);
 	visibility: hidden;
-	top: 158px;
-	left: 52px;
+	top: 149px;
+	left: 50px;
 } 
 div#nh {
-	content:url(/Users/Les/Documents/GA/Project1/states/new_hampshire.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/new_hampshire.png);
 	visibility: hidden;
 	top: 52px;
 	left: 737px;
 } 
 div#nj {
-	content:url(/Users/Les/Documents/GA/Project1/states/new_jersey.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/new_jersey.png);
 	visibility: hidden;
 	top: 145px;
 	left: 704px;
 } 
 div#nm {
-	content:url(/Users/Les/Documents/GA/Project1/states/new_mexico.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/new_mexico.png);
 	visibility: hidden;
 	visibility: hidden;
 	top: 281px;
 	left: 202px;
 } 
 div#ny {
-	content:url(/Users/Les/Documents/GA/Project1/states/new_york.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/new_york.png);
 	visibility: hidden;
 	top: 69px;
 	left: 639px;
 } 
 div#nc {
-	content:url(/Users/Les/Documents/GA/Project1/states/north_carolina.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/north_carolina.png);
 	visibility: hidden;
 	top: 251px;
 	left: 591px;
 }   
 div#nd {
-	content:url(/Users/Les/Documents/GA/Project1/states/north_dakota.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/north_dakota.png);
 	visibility: hidden;
 	top: 31;
 	left: 300px;
 } 
 div#oh {
-	content:url(/Users/Les/Documents/GA/Project1/states/ohio.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/ohio.png);
 	visibility: hidden;
 	top: 158px;
 	left: 574px;
 } 
 div#ok {
-	content:url(/Users/Les/Documents/GA/Project1/states/oklahoma.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/oklahoma.png);
 	visibility: hidden;
+	top: 286px;
+	left: 304px;
 } 
 div#or {
-	content:url(/Users/Les/Documents/GA/Project1/states/oregon.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/oregon.png);
 	visibility: hidden;
-	top: 500x;
-	left: 600;
+	top: 55px;
+	left: 9px;
 } 
 div#pa {
-	content:url(/Users/Les/Documents/GA/Project1/states/pennsylvania.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/pennsylvania.png);
 	visibility: hidden;
 	top: 140px;
 	left: 634px;
 } 
 div#ri {
-	content:url(/Users/Les/Documents/GA/Project1/states/rhode_island.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/rhode_island.png);
 	visibility: hidden;
 	top: 200px;
 	left: 780px;
 } 
 div#sc {
-	content:url(/Users/Les/Documents/GA/Project1/states/south_carolina.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/south_carolina.png);
 	visibility: hidden;
 	top: 295px;
 	left: 614px;
 }   
 div#sd {
-	content:url(/Users/Les/Documents/GA/Project1/states/south_dakota.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/south_dakota.png);
 	visibility: hidden;
 	top: 109;
 	left: 296px;
 } 
 div#tn {
-	content:url(/Users/Les/Documents/GA/Project1/states/tennesse.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/tennessee.png);
 	visibility: hidden;
 	top:  266px;
 	left: 500px;
 	
 } 
 div#tx {
-	content:url(/Users/Les/Documents/GA/Project1/states/texas.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/texas.png);
 	visibility: hidden;
 	top: 302px;
 	left: 250px;
 } 
 div#ut {
-	content:url(/Users/Les/Documents/GA/Project1/states/utah.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/utah.png);
 	visibility: hidden;
 	top: 169px;
 	left: 134px;
 }
 div#vt {
-	content:url(/Users/Les/Documents/GA/Project1/states/vermont.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/vermont.png);
 	visibility: hidden;
 	top: 53px;
 	left: 717px;
 }  
 div#va {
-	content:url(/Users/Les/Documents/GA/Project1/states/virginia.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/virginia.png);
 	visibility: hidden;
 	top: 251px;
 	left: 591px;
 } 
 div#wa {
-	content:url(/Users/Les/Documents/GA/Project1/states/washington.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/washington.png);
 	visibility: hidden;
-	top: 2px;
-	left: 8px;
+	top: -1px;
+	left: 16px;
 } 
 div#wv {
-	content:url(/Users/Les/Documents/GA/Project1/states/west_virginia.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/west_virginia.png);
 	visibility: hidden;
 	top: 250px;
 	left: 780px;
 } 
 div#wi {
-	content:url(/Users/Les/Documents/GA/Project1/states/wisconsin.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/wisconsin.png);
 	visibility: hidden;
 	top: 84px;
 	left: 449px;
 } 
 } 
 div#wy {
-	content:url(/Users/Les/Documents/GA/Project1/states/wyoming.jpg);
+	content:url(/Users/Les/Documents/GA/Project1/pngs/wyoming.png);
 	visibility: hidden;
 	top: 115px;
 	left: 187px;

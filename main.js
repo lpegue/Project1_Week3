@@ -2,13 +2,20 @@ var states = ["al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "hi", 
 "md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc", 
 "sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"];
 
+var playerOneScoreCounter=0;
+var allStates=document.querySelectorAll(".state");
+var currentPlayer="player1";
 var scoreCounter = 0
-var allStates = document.querySelectorAll(".state")
-var playerTurn = 1
+
+$("form").submit(function( event ) {
+	event.preventDefault();
+	return false;
+});
 
 
-function compareInputToArray(){   // compare 2-letter state abbreviation to array
+function compareInputToArray(){   // compare 2-letter state abbreviation to array 
 
+	console.log("compare input to array is running")
 	var testState = $("#input1").val().toLowerCase() ; // grab input from text field in the HTML and store it in variable testState. Will put in downcase and then compare.
 	var i = states.indexOf(testState); // look for a match between testState and our array of known states. indexOf returns the index position within the array if it finds a match. It returns -1 if no match 
 
@@ -19,47 +26,68 @@ function compareInputToArray(){   // compare 2-letter state abbreviation to arra
 		states.splice(i,1); // pulls matched item from the array
 		scoreCounter++;
 		console.log( scoreCounter + " guessed correctly " + states.length + " to go!"); //this does a count on remaining items in the array
-
+		$("#input1").closest("form").find("input[type=text],textarea").val("");
+		
 	}
-
+	else {
+		alert("Try Again!") //alert shows when an incorrect abbreviation is entered
+	}
 	$("#score1")[0].innerText=scoreCounter;
 	$("#input1").val("");
-
+	$("#input1").closest("form").find("input[type=text],textarea").val("");
 }
 
-function setImageVisible(id, visible) {
+function start() {
+	console.log("start");
+    gameTimer = setTimeout(turnEnd, 60000);
+    compareInputToArray()
+}	
+
+function turnEnd() {
+    alert("Your Turn is Over!");
+    clearTimeout(gameTimer);
+}
+
+function setImageVisible(id, visible) {  
     var img = document.getElementById(id);
     img.style.visibility = (visible ? 'visible' : 'hidden');
 }
 
-function reset(){
+function switchPlayer(){  // changes the states from visible to hidden and starts scoring for payer # 2
 	for (var i = 0; i < allStates.length; i++) {
-		allStates[i].style.visibility="hidden"
+		allStates[i].style.visibility="hidden";
+		if (currentPlayer === "player1") {
+			currentPlayer = "Player 2"	
+		}
+	}
 }
-}
-
  
-function resetAll(){
-		for (var i = 0; i < allStates.length; i++) {
-			allStates[i].style.visibility="hidden";
-			$("#score1").val("");
-			$("#score2").val("");
-			console.log("we got here")
-}
-}
-
-function displayTurn(x){
-	if (x % 2 === 0) {
-		alert("You are Player 1")
-	}
-	else {
-		alert("You are Player 2")
+function resetAll(){  // changes the visibility property of the states from visible to hidden & clears the scores
+	for (var i = 0; i < allStates.length; i++) {
+		allStates[i].style.visibility="hidden";
+		$("#score1").html("");
+		$("#score2").html("");
+		$("#input1").closest("form").find("input[type=text],textarea").val("");
+		console.log("we got here")
 	}
 }
 
+$("#switchPlayer").on( "click", switchPlayer)
+$("#resetAll").on("click", resetAll)
+$("#start").on("click", start)
+$("#enter").on("submit", compareInputToArray)
 
 
 
+
+
+
+
+
+/*$("body").on( "click", "#switchPlayer, #resetAll, #start", function () {
+	//window has access to all functions
+	window[this.id]();
+});*/
 
 
 // 2. timer
@@ -90,7 +118,6 @@ function displayTurn(x){
 // else {
 // 	return("Tie!!!")
 // }
-
 
 
 
