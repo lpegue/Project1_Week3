@@ -5,7 +5,8 @@ var states = ["al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "hi", 
 var playerOneScoreCounter=0;
 var allStates=document.querySelectorAll(".state");
 var currentPlayer="player1";
-var scoreCounter = 0
+var scoreCounter1 = 0;
+var scoreCounter2 =0;
 
 $("form").submit(function( event ) {
 	event.preventDefault();
@@ -24,15 +25,22 @@ function compareInputToArray(){   // compare 2-letter state abbreviation to arra
 		console.log("You guessed " + testState + " correctly!"); // logs user input
 		console.log("You guessed " + states[i] + " correctly!"); // logs the matched item in array
 		states.splice(i,1); // pulls matched item from the array
-		scoreCounter++;
-		console.log( scoreCounter + " guessed correctly " + states.length + " to go!"); //this does a count on remaining items in the array
-		$("#input1").closest("form").find("input[type=text],textarea").val("");
-		
+		if ( currentPlayer === "player1") {
+			scoreCounter1++;
+			$("#score1")[0].innerText=scoreCounter1;
+		}
+		else if ( currentPlayer === "player2") {
+			console.log("this is player 2")
+			scoreCounter2++;
+			$("#score2")[0].innerText=scoreCounter2;
+		}
+		console.log( scoreCounter1 + " guessed correctly " + states.length + " to go!"); //this does a count on remaining items in the array
+	
 	}
 	else {
 		alert("Try Again!") //alert shows when an incorrect abbreviation is entered
 	}
-	$("#score1")[0].innerText=scoreCounter;
+	
 	$("#input1").val("");
 	$("#input1").closest("form").find("input[type=text],textarea").val("");
 }
@@ -40,7 +48,7 @@ function compareInputToArray(){   // compare 2-letter state abbreviation to arra
 function start() {
 	console.log("start");
     gameTimer = setTimeout(turnEnd, 60000);
-    compareInputToArray()
+    $("#enter").on("submit", compareInputToArray)
 }	
 
 function turnEnd() {
@@ -55,14 +63,16 @@ function setImageVisible(id, visible) {
 
 function switchPlayer(){  // changes the states from visible to hidden and starts scoring for payer # 2
 	for (var i = 0; i < allStates.length; i++) {
-		allStates[i].style.visibility="hidden";
-		if (currentPlayer === "player1") {
-			currentPlayer = "Player 2"	
-		}
-	}
+		allStates[i].style.visibility="hidden"}
+		currentPlayer = "player2"
+		console.log(currentPlayer)
+
+var states = ["al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "hi", "id", "il", "in", "ia", "ks", "ky", "la", "me", 
+"md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc", 
+"sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"];
 }
- 
-function resetAll(){  // changes the visibility property of the states from visible to hidden & clears the scores
+	
+ function resetAll(){  // changes the visibility property of the states from visible to hidden & clears the scores
 	for (var i = 0; i < allStates.length; i++) {
 		allStates[i].style.visibility="hidden";
 		$("#score1").html("");
@@ -70,12 +80,15 @@ function resetAll(){  // changes the visibility property of the states from visi
 		$("#input1").closest("form").find("input[type=text],textarea").val("");
 		console.log("we got here")
 	}
+var states = ["al", "ak", "az", "ar", "ca", "co", "ct", "de", "fl", "ga", "hi", "id", "il", "in", "ia", "ks", "ky", "la", "me", 
+"md", "ma", "mi", "mn", "ms", "mo", "mt", "ne", "nv", "nh", "nj", "nm", "ny", "nc", "nd", "oh", "ok", "or", "pa", "ri", "sc", 
+"sd", "tn", "tx", "ut", "vt", "va", "wa", "wv", "wi", "wy"];
 }
 
 $("#switchPlayer").on( "click", switchPlayer)
 $("#resetAll").on("click", resetAll)
 $("#start").on("click", start)
-$("#enter").on("submit", compareInputToArray)
+
 
 
 
